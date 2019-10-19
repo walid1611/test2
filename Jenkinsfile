@@ -10,11 +10,7 @@ stage('build'){
  }
  }
  
- stage('Test'){
- steps{
- sh '/usr/bin/mnv test'
- }
- }
+
 
 
 
