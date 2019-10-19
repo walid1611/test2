@@ -6,11 +6,15 @@ stages{
 
 stage('build'){
  steps{
- sh '/usr/bin/mnv clean install'
+ sh '/usr/bin/mvn clean install'
  }
  }
  
-
+stage('TEST'){
+ steps{
+ sh '/usr/bin/mvn clean test'
+ }
+ }
 
 
 
